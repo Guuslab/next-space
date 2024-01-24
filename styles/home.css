@@ -71,16 +71,13 @@ body {
     transform: translateY(-50%);
     left: 0;
     right: 0;
-    font-family: var(--font-line);
+    font-family: var(--font);
     font-size: 10vw;
     font-weight: 900;
     text-align: center;
-    color: var(--black);
-    text-shadow: 
-    0 0 5px var(--black),
-    0 0 10px var(--black),
-    0 0 45px var(--black),
-    0 0 50px var(--black); 
+    color: var(--white);
+    -webkit-text-stroke: 4px var(--black);
+    /* text-stroke: 2px var(--black); */
     z-index: 1;
     mix-blend-mode: difference;
     filter: invert(1);

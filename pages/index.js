@@ -11,7 +11,7 @@ export default function Home() {
     <>
     <Navigation />
       <div className="hero">
-        <h1 className="space-text">guus.space</h1>
+        <h1 className="space-text">GUUS.SPACE</h1>
         <canvas id="space"></canvas>
       </div>
       <Footer />
