@@ -6,7 +6,7 @@ if (typeof window !== 'undefined') {
     var numStars = 750;
     var radius = '0.'+Math.floor(Math.random() * 9) + 1  ;
     var focalLength = canvas.width * .3;
-    // var warp = 0;
+    var warp = 0;
     var centerX, centerY;
   
     var stars = [], star;
@@ -84,8 +84,9 @@ if (typeof window !== 'undefined') {
         initializeStars();
     }
 
+    if(warp==0)
     // Draw a semi-transparent black rectangle over the whole canvas
-    c.fillStyle = "rgba(0,0,0,0.5)";
+    c.fillStyle = "rgba(0,0,0)";
     c.fillRect(0,0, canvas.width, canvas.height);
 
     c.fillStyle = "rgba(255, 255, 255, "+radius+")";
@@ -98,11 +99,17 @@ if (typeof window !== 'undefined') {
         pixelY += centerY;
         pixelRadius = 1.5 * (focalLength / star.z);
         
+        // Add a glow effect to the star
+        c.shadowBlur = 20; // Increase the blur effect
+        c.shadowColor = "white";
+        c.shadowOffsetX = 0;
+        c.shadowOffsetY = 0;
+
         c.fillRect(pixelX, pixelY, pixelRadius, pixelRadius);
         c.fillStyle = "rgba(255, 255, 255, "+star.o+")";
-        c.fill();
+        // c.fill();
     }
-    }
+}
 
     executeFrame();
 

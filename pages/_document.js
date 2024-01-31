@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>guus.space</title>
+          {/* <title>guus.space</title> */}
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
         </Head>
         <body>

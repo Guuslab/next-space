@@ -9,9 +9,35 @@ header {
 .space-logo {
     height: 40px;
     margin-bottom: -5px;
-    fill: var(--black);
     margin: 20px;
 }
+
+.space-logo-bottom, .space-logo-top, .space-logo-s, .space-logo-p, .space-logo-a, .space-logo-c, .space-logo-e {
+    fill: var(--black);
+}
+
+
+/* yunlar space logo style :) */
+/* .space-logo-s {
+    fill: var(--yunlar-groen-fl);
+}
+
+.space-logo-p {
+    fill: var(--yunlar-rood-fl);
+}
+
+.space-logo-a {
+    fill: var(--yunlar-blouw-fl);
+}
+
+.space-logo-c {
+    fill: var(--yunlar-orange-fl);
+}
+
+.space-logo-e {
+    fill: var(--yunlar-grijs-fl);
+} */
+
 
 .white {
     background-color: var(--white);

@@ -29,6 +29,17 @@
     --paars: #BA47EA;
     --paars-50: #BA47EA85;
 
+    --yunlar-groen: #8cbd2a;
+    --yunlar-groen-fl: #6943B8;
+    --yunlar-blouw: #8084ba;
+    --yunlar-blouw-fl: #7E7B49;
+    --yunlar-rood: #e02b65;
+    --yunlar-rood-fl: #31C199;
+    --yunlar-orange: #ed7c19;
+    --yunlar-orange-fl: #227DC8;
+    --yunlar-grijs: #2f2f2f;
+    --yunlar-grijs-fl: #D0D0D0;
+
     --font-line: 'juicy-simple-inline';
     --font-normal: 'juicy-simple-standard';
     --font-simple: "juicy-simple-fill";
@@ -76,7 +87,7 @@ body {
     font-weight: 900;
     text-align: center;
     color: var(--white);
-    -webkit-text-stroke: 4px var(--black);
+    -webkit-text-stroke: .3vw var(--black);
     /* text-stroke: 2px var(--black); */
     z-index: 1;
     mix-blend-mode: difference;
@@ -104,4 +115,18 @@ body {
     .space-text {
         font-size: 8vw;
     }
+}
+
+/* 
+ 8640 
+ 9870 
+ 3200
+ 4350
+ */
+
+.baground img {
+    width: 100px;  /* Verander dit naar de gewenste breedte */
+    height: 100px; /* Verander dit naar de gewenste hoogte */
+    object-fit: cover;
+    object-position: 50% 50%;
 }
